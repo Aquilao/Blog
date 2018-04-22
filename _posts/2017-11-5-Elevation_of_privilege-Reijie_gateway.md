@@ -14,14 +14,14 @@ comments: true
 ## Elevation_of_privilege-Reijie_gateway
 
 
-## 0x01 声明
+## 0x00 声明
 
 我们只是为学校网络进行测试，而且此漏洞已被我们义务修复，造成无法复现。
 由于当时并未保存所有图片，我们在报告中会使用其他同类型设备的同类型漏洞截图。
 此报告可能暴露学校的部分内网结构以及一些敏感信息，请谨慎传播！
 
 
-## 0x02 发现
+## 0x01 发现
 
 - 路由追踪
 
@@ -44,7 +44,7 @@ comments: true
 
 登录成功，但由于只是guset，权限有限，只能看到流控/行为/安全标签页,而且几乎什么都看不到。
 
-## 0x03 提权
+## 0x02 提权
 
 burpsuit抓取经过HTTP PROXY的POST数据包
 
@@ -76,7 +76,7 @@ Firefox中用打开Firefox命令行并运行命令
 
 ![Alt text](https://github.com/Aquilao/Blog/raw/master/assets/img/Elevation_of_privilege-Reijie_gateway-img/6.png)
 
-## 0x04 利用
+## 0x03 利用
 
 在web管理界面我们可以随意的更改管理员的密码，而且可以增加和删除管理员
 
@@ -91,9 +91,9 @@ Firefox中用打开Firefox命令行并运行命令
 同时，POST请求也变成了一个WEB版本的`consloe`，可以远程执行任意命令。
 
 
-## 0x05 修复
+## 0x04 修复
 
 在意识到这个漏洞所带来的风险后，我们决定立即修复，禁用了`GUEST`和`MANAGER`俩个用户。
 
-## 0x06 总结
+## 0x05 总结
 我们JJUSEC全体成员，作为学校的一份子，希望提醒各位重视信息安全，这不仅是为了学校本身，也是为了各位领导和教职工以及学生的个人信息安全。

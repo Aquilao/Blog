@@ -8,7 +8,7 @@ tag:
 comments: true
 ---
 
-![child of light](https://github.com/Aquilao/Blog/raw/gh-pages/assets/img/child_of_light-img/CoL.jpeg)
+![child of light](https://github.com/Aquilao/Blog/raw/master/assets/img/child_of_light-img/CoL.jpeg)
 
 > Aurora：心脏都被蛛网缠着，怪不得没有爱.
 >
