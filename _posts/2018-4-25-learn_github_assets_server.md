@@ -40,6 +40,6 @@ URL 格式为：
 
 P.S. 其实这张图片的真实地址为
 
-    https://raw.githubusercontent.com/Aquilao/Blog/master/assets/img/Elevation_of_privilege-Reijie_gateway-img/1.png
+	https://raw.githubusercontent.com/Aquilao/Blog/master/assets/img/learn_github_assets_server-img/Fuck_off.png
 
 raw.githubusercontent.com 就是素材服务器的域名

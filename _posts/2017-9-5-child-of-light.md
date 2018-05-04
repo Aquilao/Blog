@@ -2,7 +2,7 @@
 layout: post
 title: "Child Of Light"
 date: 2017-09-5
-excerpt: "Love and Lost"
+excerpt: "A story about love and lost"
 tag:
 - Misc～
 comments: true
