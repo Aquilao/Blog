@@ -31,7 +31,7 @@ LFI 即本地文件包含漏洞，顾名思义，包含的是本地的文件。�
 
 与 FI 相关的两个选项是 allow_url_fopen 和 allow_url_include，下面引用 PHP 手册里面的内容介绍一下这两个选项。
 
-![php.ini 默认配置](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/ini.png)
+![php.ini 默认配置](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/ini.png)
 
 > allow_url_fopen boolean
 >
@@ -86,9 +86,9 @@ include 等语句读取文件后会尝试解析，如果文件不是 PHP 代码�
 
 比如我准备了".php"、".txt"、".7z"三个文件进行测试
 
-![info.php](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/info_php.png)
-![info.txt](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/info_txt.png)
-![info.7z](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/info_7z.png)
+![info.php](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/info_php.png)
+![info.txt](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/info_txt.png)
+![info.7z](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/info_7z.png)
 
 ".php"就不用说了，但其他的扩展名的文件也成功解析了，可见的确能解析任意扩展名的 PHP 代码。
 
@@ -96,25 +96,25 @@ include 等语句读取文件后会尝试解析，如果文件不是 PHP 代码�
 
 比如我们可以上传一个图马
 
-![png_add](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/png_add.png)
+![png_add](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/png_add.png)
 
 然后再包含它
 
-![fuck](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/fuck.png)
+![fuck](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/fuck.png)
 
 
 ### 读取敏感文件
 
 读取敏感文件的话就简单的用 /etc/passwd 举栗子吧。
 
-![passwd](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/passwd.png)
+![passwd](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/passwd.png)
 
 只要文件有可读权限且程序没有对目录进行限制的话，整台电脑上的文件是可以随便读的。
 
 那如果我们想得到 PHP 源码呢？那也有办法，不过需要用到其他姿势，后面会讲
 
 
-}}
+
 
 ## 0x04 封装协议(Wrappers) 在 FI 中的利用
 
@@ -136,12 +136,12 @@ php://input 可以获取 POST 请求的原始数据，我们可以利用文件�
 
 比如执行 phpinfo()
 
-![input](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/input.png)
+![input](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/input.png)
 
 要是再配上 system() 函数和 nc 的话我们就能获得一个反向 shell了。
 
-![input_shell](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/input_shell.png)
-![re_shell](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/re_shell.png)
+![input_shell](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/input_shell.png)
+![re_shell](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/re_shell.png)
 
 ### php://filter 
 
@@ -155,11 +155,11 @@ php://filter 是一种元封装器，设计用于数据流打开时的筛选过�
 
 比如读取刚才的 info.php
 
-![base64](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/base64.png)
+![base64](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/base64.png)
 
 再将得到的字符串进行 base64 解码就能得到 PHP 源码了
 
-![base54_decode](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/base64_decode.png)
+![base54_decode](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/base64_decode.png)
 
 P.S. 该方法属于 LFI
 
@@ -169,11 +169,11 @@ data:// 是个数据流封装器，受 allow_url_include 选项影响。
 
 我们可以把要执行的 php 语句以流的方式让其包含
 
-![data](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/data.png)
+![data](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/data.png)
 
 在某些时候像'<'和'>'等符号会被过滤掉，这时候我们可以用 base64 编码绕过
 
-![data_b64](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/data_b64.png)
+![data_b64](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/data_b64.png)
 
 ### file://
 
@@ -185,7 +185,6 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
 
 想了解可以看看这篇文章 [zip或phar协议包含文件](https://bl4ck.in/tricks/2015/06/10/zip%E6%88%96phar%E5%8D%8F%E8%AE%AE%E5%8C%85%E5%90%AB%E6%96%87%E4%BB%B6.html)
 
-}}
 
 ## 0x05 截断
 
@@ -211,7 +210,8 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
 
 当 00截断用不了的时候我们还可以使用`?`来截断，前提是 allow_url_fopen 和 allow_url_include 是开启的，因为我们要使用到 http(s)://
 
-![http](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inlusion-img/http.png)
+![http](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/http.png)
+
 
 这会让程序误以为'?'后的'.php'是参数
 
@@ -228,8 +228,8 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
 
 ## 0x07 参考
 
-[使用远程文件](http://php.net/manual/zh/features.remote-files.php)
-[支持的协议和封装协议](http://php.net/manual/zh/wrappers.php)
-[PHP 手册 函数参考 文件系统相关扩展 文件系统 运行时配置](http://php.net/manual/zh/filesystem.configuration.php)
-[详解php文件包含原理](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=28688&highlight=%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB)
-[LFI、RFI、PHP封装协议安全问题学习](http://www.cnblogs.com/LittleHann/p/3665062.html)
+1. [使用远程文件](http://php.net/manual/zh/features.remote-files.php)
+2. [支持的协议和封装协议](http://php.net/manual/zh/wrappers.php)
+3. [PHP 手册 函数参考 文件系统相关扩展 文件系统 运行时配置](http://php.net/manual/zh/filesystem.configuration.php)
+4. [详解php文件包含原理](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=28688&highlight=%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB)
+5. [LFI、RFI、PHP封装协议安全问题学习](http://www.cnblogs.com/LittleHann/p/3665062.html)
