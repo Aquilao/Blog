@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web 安全基础 ——  HTTP"
+title: "Web 安全基础 ——  HTTP base"
 date: 2018-5-4 
 excerpt: "HTTP base"
 tag:
@@ -106,7 +106,7 @@ HTTP Method 一共有9种：
 
 其中 GET、HEAD、POST 方法最为常见，PUT、DELETE、CONNECT、PATCH 方法由于太过于危险而被大多数 Web 服务器禁用
 
-OPTION 方法可以探测到 Web 服务器所支持的请求方法
+OPTIONS 方法可以探测到 Web 服务器所支持的请求方法
 
 由于 HEAD 比较节省资源，所以可以用 HEAD 方法写一些扫描器来从 HTTP Headers 中获得信息
 
