@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Web 安全基础 ——  HTTP base"
-date: 2018-5-4 
+date: 2018-5-4
 excerpt: "HTTP base"
 tag:
 - HTTP
@@ -46,7 +46,7 @@ HTTP 请求报文主要由请求行、请求头、消息正文3部分组成
 	Body						//消息正文（通常没有）
 
 来看一个栗子，这是我的电脑访问百度的 HTTP Request,里面没有消息正文
-	
+
     ———————————————请求行————————————————
 	GET / HTTP/1.1		
 	———————————————请求头————————————————
@@ -60,7 +60,7 @@ HTTP 请求报文主要由请求行、请求头、消息正文3部分组成
 
 ### HTTP Response 报文格式
 
-HTTP Response 与HTTP Request 类似，它由响应头、响应行和消息正文组成
+HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正文组成
 
 	Version of protocl	Status code	Status message		//响应行
 	Response Headers						//响应头
@@ -69,10 +69,10 @@ HTTP Response 与HTTP Request 类似，它由响应头、响应行和消息正�
 
 
 栗子
-	
-    ——————————————————响应头————————————————
+
+    ——————————————————响应行————————————————
 	HTTP/1.1 302 Moved Temporarily
-	——————————————————响应行————————————————
+	——————————————————响应头————————————————
 	Server: bfe/1.0.8.18
 	Date: Sun, 24 Sep 2017 08:37:13 GMT
 	Content-Type: text/html					//文件类型
@@ -182,7 +182,7 @@ HTTP Haeders 是客户端和 Web 服务器在进行 HTTP 通信时传递附加�
 
 	User-Agent: <product> / <product-version> <comment>
 
-### Content-Type 
+### Content-Type
 
 简介
 * 用于定义网络文件的类型和网页的编码
