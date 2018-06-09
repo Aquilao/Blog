@@ -55,11 +55,11 @@ HttpOnly 标记禁止 Cookie 被 Javascript 获取到，可以防止攻击者通
 
 第三方 Cookie 就是指那些 Cookie 的 Domain 和页面的 Domain 不同的 Cookie。通常被用来追踪和广告投放，建议关闭。
 
-![3P_cookie](https://github.com/Aquilao/Blog/raw/master/assets/img/Cookie_and_Session-img/3P_cookie.png)
+![3P_cookie](https://github.com/Aquilao/Blog/raw/master/assets/img/HTTP_session-img/3P_cookie.png)
 
 DNT 即 Do-Not-Track 请求，注意，这仅仅只是一个“请求”而已，服务商可以选择不遵守，但还是建议开启。
 
-![DNT](https://github.com/Aquilao/Blog/raw/master/assets/img/Cookie_and_Session-img/DNT.png)
+![DNT](https://github.com/Aquilao/Blog/raw/master/assets/img/HTTP_session-img/DNT.png)
 
 
 ## 0x03 Session 简介
@@ -68,7 +68,7 @@ Session 是对 Cookie 的一种补充。
 
 在上面提到过，最开始 HTTP 会话是需要服务器来识别客户发送的 Cookie 的，而服务器就是靠 Session 来识别客户端所发来的 Cookie 的。
 
-由于 Cookie 有数量和大小的限制，所以在后面的发展中，那些本来储存在 Cookie 中的用户信息被迁移到储存在服务器的 Session 中，而 Cookie 只要存储像 Session ID 那样的维持和服务器交互的信息就可以了。
+由于 Cookie 有数量和大小的限制，所以在后面的发展中，那些本来储存在 Cookie 中的用户信息被迁移到储存在服务器的 Session 中，而 Cookie 只要存储像 Session ID 那种的用于维持和服务器交互的信息就可以了。
 
 如果客户端关闭了 Cookie 的话，Session ID 会通过 URL 重写来传输 Cookie，不过相对于使用 Cookie 来说还是不太安全。
 
@@ -84,7 +84,6 @@ Session 是对 Cookie 的一种补充。
 
 1. [HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
 2. [HTTP cookie wiki](https://en.wikipedia.org/wiki/HTTP_cookie)
-3. [Session (computer science) wiki](https://en.wikipedia.org/wiki/Session_(computer_science)
+3. [Session (computer science) wiki](https://en.wikipedia.org/wiki/Session_(computer_science))
 4. [Cookie与Session的区别](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=3515&highlight=session)
-5. [
-cookie、session、localStorage分别是什么？有什么作用？](https://zhuanlan.zhihu.com/p/22388743)
+5. [cookie、session、localStorage分别是什么？有什么作用？](https://zhuanlan.zhihu.com/p/22388743)
