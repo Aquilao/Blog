@@ -93,7 +93,7 @@ HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正�
 
 ## 0x03 HTTP Method
 
-HTTP Method 一共有9种：
+HTTP Method 一共有8种：
 1. GET 方法：请求一个指定资源的表示形式. 使用GET的请求应该只被用于获取数据
 2. HEAD 方法：请求一个与GET请求的响应相同的响应，但没有响应体
 3. POST 方法：用于将实体提交到指定的资源，通常导致状态或服务器上的副作用的更改
@@ -102,9 +102,9 @@ HTTP Method 一共有9种：
 6. CONNECT 方法：建立一个到由目标资源标识的服务器的隧道
 7. OPTIONS 方法：用于描述目标资源的通信选项
 8. TRACE 方法：沿着到目标资源的路径执行一个消息环回测试
-9. PATCH 方法：用于对资源应用部分修改
 
-其中 GET、HEAD、POST 方法最为常见，PUT、DELETE、CONNECT、PATCH 方法由于太过于危险而被大多数 Web 服务器禁用
+
+其中 GET、HEAD、POST 方法最为常见，PUT、DELETE、CONNECT 等方法由于太过于危险而被大多数 Web 服务器禁用
 
 OPTIONS 方法可以探测到 Web 服务器所支持的请求方法
 
@@ -209,22 +209,11 @@ HTTP Haeders 是客户端和 Web 服务器在进行 HTTP 通信时传递附加�
 
 	Server: <product>
 
-### Cookie
+### Cookie & Set-Cookie
 
-很重要，下面将用一节来讲
+很重要，请看我的另一篇文章[HTTP 会话机制](https://aquilao.github.io/Blog/HTTP_session)
 
 暂时就想到这些了，如果以后碰到其他的话继续更。
-
-
-
-## 0x06 HTTP Cookie
-
-由于 HTTP 是无状态的，所以 Web 服务器无法判断哪些 Request 是同一个客户端发送的。比如你要在教务系统里查成绩，但是教务系统无法判断是不是你在操作，为了安全，教务系统只能让你每进行一步操作都输入一次密码。要是这样的话我们或许会被气到不去查成绩～，所以工程师们想了个办法来解决身份认证的问题。当客户端第一次发送 Requests 的时候，Web 服务器在 Response Header 中会给服务器一块 Cookie（Set-Cookie），客户端会把它暂时储存起来，等下次客户端发生 Request 时把 Cookie 放在 Headers 中，Web 服务器看到就知道是哪台客户端了。
-
-Cookie 有两种，分别是 Session cookies 和 Permanent cookies 。顾名思义 Session cookies 就是在一次会话中起作用的 Cookie ，而 Permanet cookies 会在到达一个过期时间（Expires）或者经过一个保质期（Max-Age）之后失效。
-
-由于 Cookie 作为客户端与 Web 服务器会话认证方式，攻击者们自然会把眼光放在上面。攻击者们常用一些社会工程学手段或者 XSS 来窃取用户的 Cookie，然后再使用获取到的 Cookie 以受害者的身份与 Web 服务器建立会话。而 CSRF 也是利用客户端与 Web 服务器会话未断开，Cookie 依然有效的前提实现的。由于文章主题，在这里不过多叙述，以后再写相关文章。
-
 
 
 ## 0x06 总结
