@@ -40,10 +40,10 @@ P.S. 当然这还得看 HTTP header 中的 Connection 头,想要了解更多的�
 
 HTTP 请求报文主要由请求行、请求头、消息正文3部分组成
 
-	Method    Path     Version of the protocl	//请求行
-	Request Headers					//请求头
+	Method    Request-URL     Version		//请求行
+	Request-headers					//请求头
 							//空行
-	Body						//消息正文（通常没有）
+	Entity-body						//消息正文（通常没有）
 
 来看一个栗子，这是我的电脑访问百度的 HTTP Request,里面没有消息正文
 
@@ -62,10 +62,10 @@ HTTP 请求报文主要由请求行、请求头、消息正文3部分组成
 
 HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正文组成
 
-	Version of protocl	Status code	Status message		//响应行
-	Response Headers						//响应头
+	Version	Status-code	Reason-phrase		//响应行
+	Response-headers						//响应头
 									//空行
-	Body								//响应正文
+	Entity-body								//响应正文
 
 
 栗子
@@ -93,15 +93,14 @@ HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正�
 
 ## 0x03 HTTP Method
 
-HTTP Method 一共有8种：
+HTTP Method 一共有7种：
 1. GET 方法：请求一个指定资源的表示形式. 使用GET的请求应该只被用于获取数据
 2. HEAD 方法：请求一个与GET请求的响应相同的响应，但没有响应体
 3. POST 方法：用于将实体提交到指定的资源，通常导致状态或服务器上的副作用的更改
 4. PUT 方法：用请求有效载荷替换目标资源的所有当前表示
 5. DELETE 方法：删除指定的资源
-6. CONNECT 方法：建立一个到由目标资源标识的服务器的隧道
-7. OPTIONS 方法：用于描述目标资源的通信选项
-8. TRACE 方法：沿着到目标资源的路径执行一个消息环回测试
+6. OPTIONS 方法：用于描述目标资源的通信选项
+7. TRACE 方法：沿着到目标资源的路径执行一个消息环回测试
 
 
 其中 GET、HEAD、POST 方法最为常见，PUT、DELETE、CONNECT 等方法由于太过于危险而被大多数 Web 服务器禁用

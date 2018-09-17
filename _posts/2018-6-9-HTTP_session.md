@@ -68,7 +68,7 @@ Session 是对 Cookie 的一种补充。
 
 在上面提到过，最开始 HTTP 会话是需要服务器来识别客户发送的 Cookie 的，而服务器就是靠 Session 来识别客户端所发来的 Cookie 的。
 
-由于 Cookie 有数量和大小的限制，所以在后面的发展中，那些本来储存在 Cookie 中的用户信息被迁移到储存在服务器的 Session 中，而 Cookie 只要存储像 Session ID 那种的用于维持和服务器交互的信息就可以了。
+由于 Cookie 有数量和大小的限制，所以在后面的发展中，那些本来储存在 Cookie 中的用户信息被迁移到储存在服务器的 Session 中，而 Cookie 只要存储像 Session ID 那种用于维持和服务器交互的信息就可以了。
 
 如果客户端关闭了 Cookie 的话，Session ID 会通过 URL 重写来传输 Cookie，不过相对于使用 Cookie 来说还是不太安全。
 

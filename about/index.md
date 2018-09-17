@@ -10,7 +10,7 @@ comments: false
 
 ## Features
 * 学生
-* 信息安全
+* Web 安全
 * 夕阳红广场舞俱乐部划水狗
 
 ## Links
