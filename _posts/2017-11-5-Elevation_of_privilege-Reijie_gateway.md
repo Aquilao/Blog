@@ -37,7 +37,7 @@ comments: true
 
 确定一台锐捷网关
 
-猜解弱口令:
+弱口令:
 
     user:guest
     passwd:guest
@@ -73,6 +73,8 @@ Firefox中用打开Firefox命令行并运行命令
     >> cookie set user = admin
 
 然后我们刷新一下页面就以admin登录了，自此我们拿到了这台网关的最高权限
+
+**2018.10.14 更新：发现新版的 Firefox 已经不能运行该命令了~，不过依然可以通过 F12 中的 Storage 标签页修改 Cookie，总之只要把 Cookie 中的 user 字段从 guest 改为 admin 就行了，方法很多。**
 
 ![Alt text](https://github.com/Aquilao/Blog/raw/master/assets/img/Elevation_of_privilege-Reijie_gateway-img/6.png)
 
