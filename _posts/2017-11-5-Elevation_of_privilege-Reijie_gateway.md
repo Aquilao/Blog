@@ -54,7 +54,7 @@ burpsuit抓取经过HTTP PROXY的POST数据包
 
 查阅了RUIJIE文档，发现`webmaster`可用于权限提升和降低！！
 
-构造POST请求，用`webmaster level 0 username guest password guest`命令来提升guest的权限（试探）
+构造POST请求，用`webmaster level 0 username guest password guest`命令来提升 guest 的权限，同时把`strurl`中的`exec`改为`config`（试探）
 ![Alt text](https://github.com/Aquilao/Blog/raw/master/assets/img/Elevation_of_privilege-Reijie_gateway-img/3.png)
 
 成功了。
