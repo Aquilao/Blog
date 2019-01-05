@@ -38,7 +38,7 @@ comments: true
 
 即可生成 classes-dex2jar.jar 在你的当前目录下。
 
-P.S. <d2j-dex2jar.bat_path> 指 d2j-dex2jar.bat 文件的路径，<classes.dex_path> 指 classes.dex 文件的路径。
+`<d2j-dex2jar.bat_path>` 指 d2j-dex2jar.bat 文件的路径，`<classes.dex_path>` 指 classes.dex 文件的路径。
 
 变成 jar 文件就好办了，我们可以用 jd-gui 来直接读其中的 Java 代码。
 
@@ -58,7 +58,7 @@ P.S. <d2j-dex2jar.bat_path> 指 d2j-dex2jar.bat 文件的路径，<classes.dex_p
 
 即可解包该 apk 在指定的文件夹下。
 
-P.S. <apk_path> 指待反编译 apk 的路径，<folder_path> 指把反编译的文件输出的文件夹
+`<apk_path>` 指待反编译 apk 的路径，`<folder_path>` 指把反编译的文件输出的文件夹
 
 我们可以对反编译出来的 smali 代码或其他文件进行修改，另外反编译出的 AndroidManifest.xml 文件可以被读取，可能会在里面发现一些安全隐患。
 
@@ -74,7 +74,7 @@ Apktool 反编译得到的文件可以重新打包
 
     keytool -genkey -alias <keystore_alias> -keyalg RSA -validity <effective_time> -keystore key.keystore
 
-P.S. <keystore_alias> 是 keystore 文件的别名，然后加密算法我们选了 RSA ，<effective_time> 是签名有效时间，单位是天，然后输出的名称为 key.keystore。  
+`<keystore_alias>` 是 keystore 文件的别名，然后加密算法我们选了 RSA ，`<effective_time>` 是签名有效时间，单位是天，然后输出的名称为 key.keystore。  
 
 ## 0x05 对 apk 进行签名
 
@@ -82,7 +82,7 @@ P.S. <keystore_alias> 是 keystore 文件的别名，然后加密算法我们选
 
     jarsigner -verbose -keystore <keystore_path> -signedjar <signed_apk_path> <unsigned_apk_path> <keystore_alias>
 
-P.S. <keystore_path> 是指 keystore 文件存放的路径，<signed_apk_path> 是指签名后的 apk，<unsigned_apk_path> 是指未签名的 apk，<keystore_alias> 是指之前生成 keystore 文件时所使用的别名。
+`<keystore_path>` 是指 keystore 文件存放的路径，`<signed_apk_path>` 是指签名后的 apk，`<unsigned_apk_path>` 是指未签名的 apk，`<keystore_alias>` 是指之前生成 keystore 文件时所使用的别名。
 
 还有就是如果 apk 已经被加固过反编译后重打包之后生成的 apk 会比原先小很多...  
 
