@@ -74,17 +74,17 @@ Apktool 反编译得到的文件可以重新打包
 
     keytool -genkey -alias <keystore_alias> -keyalg RSA -validity <effective_time> -keystore key.keystore
 
-<keystore_alias> 是 keystore 文件的别名，然后加密算法我们选了 RSA ，<effective_time> 是签名有效时间，单位是天，然后输出的名称为 key.keystore。
+<keystore_alias> 是 keystore 文件的别名，然后加密算法我们选了 RSA ，<effective_time> 是签名有效时间，单位是天，然后输出的名称为 key.keystore。  
 
 ## 0x05 对 apk 进行签名
 
-现在要使用我们刚生成的 keystore 文件对打包好的 apk 进行签名
+现在要使用我们刚生成的 keystore 文件对打包好的 apk 进行签名  
 
     jarsigner -verbose -keystore <keystore_path> -signedjar <signed_apk_path> <unsigned_apk_path> <keystore_alias>
 
-<keystore_path> 是指 keystore 文件存放的路径，<signed_apk_path> 是指签名后的 apk，<unsigned_apk_path> 是指未签名的 apk，<keystore_alias> 是指之前生成 keystore 文件时所使用的别名
+<keystore_path> 是指 keystore 文件存放的路径，<signed_apk_path> 是指签名后的 apk，<unsigned_apk_path> 是指未签名的 apk，<keystore_alias> 是指之前生成 keystore 文件时所使用的别名  
 
-还有就是如果 apk 已经被加固过反编译后重打包之后生成的 apk 会比原先小很多...
+还有就是如果 apk 已经被加固过反编译后重打包之后生成的 apk 会比原先小很多...  
 
 ## 0x06 参考
 
