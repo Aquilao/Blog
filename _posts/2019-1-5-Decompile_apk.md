@@ -50,8 +50,6 @@ comments: true
 
 官方提供的下载及使用方式写的很详细，就不介绍了，我们直接上手。
 
-进入放有 apktool.jar 和 apktool.bat 的文件夹
-
 使用命令
 
     apktool d -f <apk_path> -o <folder_path>
