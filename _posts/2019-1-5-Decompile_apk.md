@@ -46,6 +46,8 @@ comments: true
 
 ## 0x02 使用 Apktool 进行反编译
 
+**2019.3.5 更新：发现其实 kali 里面可以直接 apt install 来着~**
+
 [Apktool 下载及使用方式](https://ibotpeaches.github.io/Apktool/install/)
 
 官方提供的下载及使用方式写的很详细，就不介绍了，我们直接上手。

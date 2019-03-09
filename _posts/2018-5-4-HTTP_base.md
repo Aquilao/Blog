@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web 安全基础 ——  HTTP base"
+title: "Web 安全基础 Part 1 ——  HTTP base"
 date: 2018-5-4
 excerpt: "HTTP base"
 tag:
@@ -223,9 +223,9 @@ HTTP 是 Web 的基础，当然也是 Web 安全的基础，在 Web 安全中处
 
 ## 0x07 参考
 
-1. [HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
-2. [HTTP 请求方法](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods)
-3. [HTTP 响应代码](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
-4. [HTTP Headers](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers)
-5. [HTTP/1.x 的连接管理](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Connection_management_in_HTTP_1.x)
-6. [使用用户代理字段进行浏览器检测](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Browser_detection_using_the_user_agent)
+1. [HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies) - MDN
+2. [HTTP 请求方法](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods) - MDN
+3. [HTTP 响应代码](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status) - MDN
+4. [HTTP Headers](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers) - MDN
+5. [HTTP/1.x 的连接管理](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Connection_management_in_HTTP_1.x) - MDN
+6. [使用用户代理字段进行浏览器检测](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Browser_detection_using_the_user_agent) - MDN

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web 安全基础 ——  HTTP 会话机制"
+title: "Web 安全基础 Part 2 ——  HTTP 会话机制"
 date: 2018-6-8
 excerpt: "HTTP Session"
 tag:
