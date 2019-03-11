@@ -51,6 +51,16 @@ Secure 标记禁止 HTTP 传输带有该标记的 Cookie，而使用更安全的
 
 HttpOnly 标记禁止 Cookie 被 Javascript 获取到，可以防止攻击者通过 XSS 来窃取用户的 Cookie。
 
+### Domain 和 Path 标记
+
+Domain 和 Path 是 Set-Cookie 时在末尾的两个可选标记。
+
+Cookie 的“源”并不遵守同源策略(SOP)中“源”的定义，所以 Cookie 使用这两个标记来定义“源”（即作用域）。
+
+Domain 标记用于指定哪些主机可以接受 Cookie。默认为当前文档的主机（不包含子域名）。如果指定了 Domain，则一般包含子域名。
+
+Path 标记用于指定主机下的哪些路径可以接受 Cookie（该URL路径必须存在于请求URL中）。以字符 %x2F ("/") 作为路径分隔符，子路径也会被匹配。
+
 ### 第三方 Cookie 和 DNT
 
 第三方 Cookie 就是指那些 Cookie 的 Domain 和页面的 Domain 不同的 Cookie。通常被用来追踪和广告投放，建议关闭。
