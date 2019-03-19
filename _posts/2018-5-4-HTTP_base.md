@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Web 安全基础 Part 1 ——  HTTP base"
+title: "Web 安全基础 Part 1 ——  HTTP 基础"
 date: 2018-5-4
-excerpt: "HTTP base"
+excerpt: "HTTP 基础知识"
 tag:
 - HTTP
 - Web Seurity Base
@@ -169,7 +169,7 @@ HTTP Haeders 是客户端和 Web 服务器在进行 HTTP 通信时传递附加�
 ### user-agent(UA)
 
 简介
-* 包含了浏览器开发商、浏览器、操作系统、渲染引擎等信息，具体可见 MDN 中的这篇文章——[使用用户代理字段进行浏览器检测](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Browser_detection_using_the_user_agent)
+* 包含了浏览器开发商、浏览器、操作系统、渲染引擎等信息，具体可见 MDN 中的这篇文章 — [《使用用户代理字段进行浏览器检测》](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Browser_detection_using_the_user_agent)
 * 有些网站的反爬虫机制会通过检查 UA 来过滤掉爬虫的请求
 * 在自动化大规模扫描时使用大量不同的 UA 可以起到一定程度的伪装作用
 
@@ -210,7 +210,7 @@ HTTP Haeders 是客户端和 Web 服务器在进行 HTTP 通信时传递附加�
 
 ### Cookie & Set-Cookie
 
-很重要，请看我的另一篇文章[HTTP 会话机制](https://aquilao.github.io/Blog/HTTP_session)
+很重要，请看我的另一篇文章 - [《 HTTP 会话机制 》](https://aquilao.github.io/Blog/HTTP_session)
 
 暂时就想到这些了，如果以后碰到其他的话继续更。
 
