@@ -63,6 +63,8 @@ Path 标记用于指定主机下的哪些路径可以接受 Cookie（该URL路�
 
 ### 第三方 Cookie 和 DNT
 
+**2019.6.6 更新**：前两天 Firefox 更新的 [67.0.1 版本](https://www.mozilla.org/en-US/firefox/67.0.1/releasenotes/)默认启用[增强跟踪保护（ETP）](https://blog.mozilla.org/futurereleases/2019/02/20/enhanced-tracking-protection-testing-update/)，对用户隐私来说，这是项很棒的举措。
+
 第三方 Cookie 就是指那些 Cookie 的 Domain 和页面的 Domain 不同的 Cookie。通常被用来追踪和广告投放，建议关闭。
 
 ![3P_cookie](https://github.com/Aquilao/Blog/raw/master/assets/img/HTTP_session-img/3P_cookie.png)
