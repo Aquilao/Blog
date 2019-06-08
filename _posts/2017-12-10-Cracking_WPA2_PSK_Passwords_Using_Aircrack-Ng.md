@@ -4,7 +4,8 @@ title: "用Aircrack-Ng 破解WPA2-PSK密码"
 date: 2017-12-10
 excerpt: "破解WPA2"
 translation: ture
-tags: []
+tags:
+- Wi-Fi hacking
 comments: true
 ---
 

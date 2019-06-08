@@ -4,7 +4,8 @@ title: "如何破解 Wi-Fi 密码 - 给初学者！"
 date: 2018-1-11
 excerpt: "在 windows 平台上用 CommView 破解 WEP"
 translation: ture
-tags: []
+tags:
+- Wi-Fi hacking
 comments: true
 ---
 

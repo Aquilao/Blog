@@ -4,7 +4,8 @@ title: "Metasploit 基础，Part 2 (关键字)"
 date: 2018-2-11
 excerpt: "Metasploit 关键字"
 translation: ture
-tags: []
+tags: 
+- Metasploit
 comments: true
 ---
 

@@ -4,7 +4,8 @@ title: "选择一个好的WiFi Hacking策略"
 date: 2017-11-12
 excerpt: "如何选择一个好的WiFi Hacking策略"
 translation: ture
-tags: []
+tags:
+- Wi-Fi hacking
 comments: true
 ---
 

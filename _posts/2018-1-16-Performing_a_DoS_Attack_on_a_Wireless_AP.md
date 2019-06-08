@@ -4,7 +4,8 @@ title: "在AP上进行拒绝服务(DoS)攻击"
 date: 2018-1-16
 excerpt: "无线 DoS"
 translation: ture
-tags: []
+tags:
+- Wi-Fi hacking
 comments: true
 ---
 

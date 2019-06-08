@@ -4,7 +4,8 @@ title: "Metasploit 基础，Part 1（入门与概述）"
 date: 2018-2-4
 excerpt: "Metasploit 入门与概述"
 translation: ture
-tags: []
+tags:
+- Metasploit
 comments: true
 ---
 

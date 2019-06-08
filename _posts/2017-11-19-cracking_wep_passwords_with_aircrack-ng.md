@@ -4,7 +4,8 @@ title: "用Aircrack-ng破解WEP密码"
 date: 2017-11-19
 excerpt: "破解WEP"
 translation: ture
-tags: []
+tags:
+- Wi-Fi hacking
 comments: true
 ---
 
