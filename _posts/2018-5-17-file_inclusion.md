@@ -248,8 +248,8 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
 
 ## 0x08 参考
 
-1. [使用远程文件](http://php.net/manual/zh/features.remote-files.php)
-2. [支持的协议和封装协议](http://php.net/manual/zh/wrappers.php)
-3. [PHP 手册 函数参考 文件系统相关扩展 文件系统 运行时配置](http://php.net/manual/zh/filesystem.configuration.php)
-4. [详解php文件包含原理](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=28688&highlight=%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB)
-5. [LFI、RFI、PHP封装协议安全问题学习](http://www.cnblogs.com/LittleHann/p/3665062.html)
+1. [使用远程文件](http://php.net/manual/zh/features.remote-files.php) - php manual
+2. [支持的协议和封装协议](http://php.net/manual/zh/wrappers.php) - php manual
+3. [PHP 手册 函数参考 文件系统相关扩展 文件系统 运行时配置](http://php.net/manual/zh/filesystem.configuration.php) - php manual
+4. [详解php文件包含原理](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=28688&highlight=%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB) - rosectow
+5. [LFI、RFI、PHP封装协议安全问题学习](http://www.cnblogs.com/LittleHann/p/3665062.html) - Han Zheng

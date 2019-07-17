@@ -90,7 +90,7 @@ Session 是对 Cookie 的一种补充。
 
 > cookie 是存储在浏览器里的一小段「数据」，而session是一种让服务器能识别某个用户的「机制」，session 在实现的过程中需要使用cookie。
 
-另外，Cookie 最好加密，不然可能会发生越权，就比如在上次的[锐捷易网关渗透测试](https://aquilao.github.io/Blog/Elevation_of_privilege-Reijie_gateway/)中我们就是修改 Cookie 中的 Session ID 来达到垂直越权的目的。
+另外，Cookie 最好加密，不然可能会发生越权，就比如在上次的[锐捷易网关渗透测试](https://aquilao.github.io/Blog/Elevation_of_privilege-Ruijie_gateway/)中我们就是修改 Cookie 中的 Session ID 来达到垂直越权的目的。
 
 ## 0x05 参考
 
