@@ -2,14 +2,14 @@
 layout: page
 title: About me
 tags: [about, Aquilao]
-date: 2019-03-19
+date: 2019-10-09
 comments: false
 ---
 
-<center>To be a pro</center>
+<center>你的人生前路未免太过灰暗了吧？</center>
 
 ## Features
-* 学生（实习中...）
+* ~~学生（实习中...）~~
 * Web 安全
 * 夕阳红广场舞俱乐部划水狗
 * 废宅

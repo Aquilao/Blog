@@ -1,11 +1,11 @@
 # Site
 title:              Aquilao'Blog
-bio:                'To be a pro'
-description:        "To be a pro."
+bio:                '你的人生前路未免太过灰暗了吧？'
+description:        "你的人生前路未免太过灰暗了吧？"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/favicon.jpg'
-background:         'assets/img/placeholder-big.jpg'
+background:         black #'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://aquilao.github.io/Blog
