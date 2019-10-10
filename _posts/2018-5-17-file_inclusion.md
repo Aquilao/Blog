@@ -6,7 +6,6 @@ excerpt: "File Inclusion 基础利用"
 tag:
 - File Inclusion
 - 恶意代码上传与解析
-- Web Seurity Base
 comments: true
 ---
 

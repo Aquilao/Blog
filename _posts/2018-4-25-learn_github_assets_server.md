@@ -4,7 +4,7 @@ title: "学习使用 Github 素材服务器"
 date: 2018-04-25
 excerpt: "GitHub Assets Server"
 tag:
-- GitHub
+- Misc~
 comments: true
 ---
 

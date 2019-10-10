@@ -4,7 +4,7 @@ title: "我的阴阳两界"
 date: 2017-09-15
 excerpt: "没什么好解释的"
 tag:
-- Misc~
+- Mind
 comments: true
 ---
 

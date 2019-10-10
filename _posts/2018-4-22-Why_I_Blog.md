@@ -4,7 +4,7 @@ title: "我为什么写 Blog"
 date: 2018-04-22
 excerpt: "一些反思"
 tag:
-- Misc~
+- Mind
 comments: true
 ---
 
