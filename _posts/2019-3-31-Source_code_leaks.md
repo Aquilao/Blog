@@ -24,7 +24,7 @@ comments: true
 
 利用工具: lijiejie - [GitHack](https://github.com/lijiejie/GitHack)
 
-**2019.10.10 更新：之前有一次遇到一道 CTF，用 GitHack 提取不完全，后面改用[Git_Extract](https://github.com/gakki429/Git_Extract)才获取到，建议使用后者**
+**2019.10.10 更新：之前有一次遇到一道 CTF，用 GitHack 提取不完全，后面改用 [Git_Extract](https://github.com/gakki429/Git_Extract) 才获取到，建议使用后者**
 
 ## 0x02 svn 源码泄露
 

@@ -219,6 +219,6 @@ Atom 是 github 的一个文本编辑器，无论 UI 风格 还是强大且方�
 
 百度到的[解决办法](https://unix.stackexchange.com/questions/252603/debian-jessie-boot-hangs-at-started-update-utmp-about-system-runlevel-changes)使用后却没效果，然后我在tty里把所有名字前面带NVIDIA的包全卸载掉～于是电脑就恢复了～
 
-算了，这显卡老子不要了(╯°Д°)╯︵ ┻━┻
+算了，这显卡老子不要了
 
 **声明：这篇文章里有大量网上找的资料，我已经在后面贴了链接，还有一些没贴的要不是来自百度知道，要不是来自国内外的论坛，或者是我自己折腾出的办法，如果作者希望挂上链接或修改这篇文章请Email联系我**

@@ -44,7 +44,7 @@ LFI 即本地文件包含漏洞，顾名思义，包含的是本地的文件。�
 >
 >    This option allows the use of URL-aware fopen wrappers with the following functions: include, include_once, require, require_once.
 
-allow_url_include 没给出翻译，我大概翻译一下
+allow_url_include 没给出翻译，我大致翻译一下
 
 > allow_url_include boolean
 >
@@ -87,13 +87,13 @@ include 等语句读取文件后会尝试解析，如果文件不是 PHP 代码�
         phpinfo();
     ?>
 
-比如我准备了".php"、".txt"、".7z"三个文件进行测试
+比如我准备了`.php`、`.txt`、`.7z`三个文件进行测试
 
 ![info.php](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/info_php.png)
 ![info.txt](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/info_txt.png)
 ![info.7z](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/info_7z.png)
 
-".php"就不用说了，但其他的扩展名的文件也成功解析了，可见的确能解析任意扩展名的 PHP 代码。
+`.php`就不用说了，但其他的扩展名的文件也成功解析了，可见的确能解析任意扩展名的 PHP 代码。
 
 如果被包含的 PHP 代码不是 phpinfo() 而是恶意代码呢，所以我们可以通过文件上传或其他漏洞把后门上传上去的话可以尝试用 LFI 来解析它。
 
@@ -174,7 +174,7 @@ data:// 是个数据流封装器，受 allow_url_include 选项影响。
 
 ![data](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/data.png)
 
-在某些时候像'<'和'>'等符号会被过滤掉，这时候我们可以用 base64 编码绕过
+在某些时候像`<`和`>`等符号会被过滤掉，这时候我们可以用 base64 编码绕过
 
 ![data_b64](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/data_b64.png)
 
@@ -186,7 +186,7 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
 
 不受 allow_url_fopen 和 allow_url_include 影响，属于 LFI，通常被用来绕过限定扩展名的情况，这种情况的描述见下一节。
 
-假如只允许上传后缀名为".jpg"的文件，我们可以把"info.php"压缩为"info.zip"，然后修改扩展名为".zip"后上传。
+假如只允许上传后缀名为`.jpg`的文件，我们可以把`info.php`压缩为`info.zip`，然后修改扩展名为`.zip`后上传。
 
 ![phar](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/phar.png)
 
@@ -202,7 +202,7 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
         include $_GET[page] . '.php'
     ?>
 
-访问的时候就不用输入'.php'的后缀了
+访问的时候就不用输入`.php`的后缀了
 
 相对上面提到的 phar:// 之外，我们更多的是使用截断
 
@@ -218,13 +218,13 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
 
 ![http](https://github.com/Aquilao/Blog/raw/master/assets/img/file_inclusion-img/http.png)
 
-这会让程序误以为'?'后的'.php'是参数
+这会让程序误以为`?`后的`.php`是参数
 
 ### 超长路径截断
 
 在 php < 5.2.8 情况下我可通过超长路径来截断后面的内容。
 
-因为在 Windows 下文件路径最多是 256 ，而 Linux 则是 4096，我们只需要在要包含的文件后面疯狂的加"./"就行了
+因为在 Windows 下文件路径最多是 256 ，而 Linux 则是 4096，我们只需要在要包含的文件后面疯狂的加`./`就行了
 
 
 
