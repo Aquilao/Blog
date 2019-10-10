@@ -87,4 +87,4 @@ Apktool 反编译得到的文件可以重新打包
 
 ## 0x06 参考
 
-1. [Android APK反编译就这么简单 详解](https://blog.csdn.net/vipzjyno1/article/details/21039349)
+1. [Android APK反编译就这么简单 详解](https://blog.csdn.net/vipzjyno1/article/details/21039349) - vipra

@@ -64,7 +64,7 @@ HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正�
 
 	Version	Status-code	Reason-phrase		//响应行
 	Response-headers						//响应头
-									//空行
+											//空行
 	Entity-body								//响应正文
 
 
@@ -75,7 +75,7 @@ HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正�
 	——————————————————响应头————————————————
 	Server: bfe/1.0.8.18
 	Date: Sun, 24 Sep 2017 08:37:13 GMT
-	Content-Type: text/html					//文件类型
+	Content-Type: text/html							//文件类型
 	Content-Length: 161
 	Connection: Close
 	Location: https://www.baidu.com/

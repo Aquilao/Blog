@@ -94,8 +94,8 @@ Session 是对 Cookie 的一种补充。
 
 ## 0x05 参考
 
-1. [HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
-2. [HTTP cookie wiki](https://en.wikipedia.org/wiki/HTTP_cookie)
-3. [Session (computer science) wiki](https://en.wikipedia.org/wiki/Session_(computer_science))
-4. [Cookie与Session的区别](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=3515&highlight=session)
-5. [cookie、session、localStorage分别是什么？有什么作用？](https://zhuanlan.zhihu.com/p/22388743)
+1. [HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies) - MDN
+2. [HTTP cookie wiki](https://en.wikipedia.org/wiki/HTTP_cookie) - wiki
+3. [Session (computer science) wiki](https://en.wikipedia.org/wiki/Session_(computer_science)) - wiki
+4. [Cookie与Session的区别](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=3515&highlight=session) - 池寒
+5. [cookie、session、localStorage分别是什么？有什么作用？](https://zhuanlan.zhihu.com/p/22388743) - 若愚

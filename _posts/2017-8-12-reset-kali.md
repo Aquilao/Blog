@@ -185,17 +185,15 @@ zsh 和 bash 在使用方法上可以说几乎一模一样了，相较与 bash �
 
 安装 zsh
 
-  sudo apt install zsh
-
-
+    sudo apt install zsh
 
 oh-my-zsh 是 zsh 的配置文件，里面内置了不少主题
 
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 设置 zsh 默认 shell
 
-  chsh -s `which zsh`
+    chsh -s `which zsh`
 
 ~/.zshrc 是我们的 zsh 配置文件，ZSH_THEME 是主题设置，我目前在用的是"bira"
 
@@ -205,9 +203,9 @@ Atom 是 github 的一个文本编辑器，无论 UI 风格 还是强大且方�
 
 在[官网](https://atom.io/)选择 Atom 的 deb 安装包然后直接安装
 
-  sudo dpkg -i atom-amd64.deb
+    sudo dpkg -i atom-amd64.deb
 
-里面有很完善友好的新手引导，作为新手表示使用完全无压力
+里面有很完善友好的新手引导，作为新手使用无压力
 
 ### 第二天更新
 
@@ -217,7 +215,7 @@ Atom 是 github 的一个文本编辑器，无论 UI 风格 还是强大且方�
 
 再次重启就出现“[ OK ] Started Update UTMP about System Runlevel Changes.”的错误
 
-百度到的[解决办法](https://unix.stackexchange.com/questions/252603/debian-jessie-boot-hangs-at-started-update-utmp-about-system-runlevel-changes)使用后却没效果，然后我在tty里把所有名字前面带NVIDIA的包全卸载掉～于是电脑就恢复了～
+百度到的[解决办法](https://unix.stackexchange.com/questions/252603/debian-jessie-boot-hangs-at-started-update-utmp-about-system-runlevel-changes)使用后却没效果，然后我在 tty 里把所有名字前面带 NVIDIA 的包全卸载掉～于是电脑就恢复了～
 
 算了，这显卡老子不要了
 
