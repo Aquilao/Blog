@@ -4,7 +4,7 @@ title: "Kali重装小记"
 date: 2017-08-12
 excerpt: "作死后重装Kali的一些记录"
 tag:
-- Kali
+- Misc~
 comments: true
 
 ---
