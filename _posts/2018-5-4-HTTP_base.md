@@ -43,7 +43,7 @@ HTTP 请求报文主要由请求行、请求头、消息正文3部分组成
 	Method    Request-URL     Version		//请求行
 	Request-headers					//请求头
 							//空行
-	Entity-body						//消息正文（通常没有）
+	Entity-body					//消息正文（某些情况下没有）
 
 来看一个栗子，这是我的电脑访问百度的 HTTP Request,里面没有消息正文
 
@@ -63,9 +63,9 @@ HTTP 请求报文主要由请求行、请求头、消息正文3部分组成
 HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正文组成
 
 	Version	Status-code	Reason-phrase		//响应行
-	Response-headers						//响应头
-											//空行
-	Entity-body								//响应正文
+	Response-headers				//响应头
+							//空行
+	Entity-body					//响应正文
 
 
 栗子
@@ -75,7 +75,7 @@ HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正�
 	——————————————————响应头————————————————
 	Server: bfe/1.0.8.18
 	Date: Sun, 24 Sep 2017 08:37:13 GMT
-	Content-Type: text/html							//文件类型
+	Content-Type: text/html					//文件类型
 	Content-Length: 161
 	Connection: Close
 	Location: https://www.baidu.com/
@@ -93,10 +93,10 @@ HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正�
 
 ## 0x03 HTTP Method
 
-HTTP Method 一共有7种：
+常见的 HTTP Method 一共有7种：
 1. GET 方法：请求一个指定资源的表示形式. 使用GET的请求应该只被用于获取数据
 2. HEAD 方法：请求一个与GET请求的响应相同的响应，但没有响应体
-3. POST 方法：用于将实体提交到指定的资源，通常导致状态或服务器上的副作用的更改
+3. POST 方法：用于将实体提交到指定的资源，通常导致在服务器上的状态变化或副作用
 4. PUT 方法：用请求有效载荷替换目标资源的所有当前表示
 5. DELETE 方法：删除指定的资源
 6. OPTIONS 方法：用于描述目标资源的通信选项
@@ -111,6 +111,7 @@ OPTIONS 方法可以探测到 Web 服务器所支持的请求方法
 
 GET 和 POST 是客户端传输数据给 Web 服务器最常用的两种方法，GET 传输的数据会被加在 URL 中，而 POST 传输的数据则会以表单等形式出现在请求正文中
 
+关于其他 Method 可以看[HTTP 请求方法](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods)
 
 ## 0x04 HTTP Status Codes
 

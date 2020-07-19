@@ -6,7 +6,7 @@ date: 2019-10-09
 comments: false
 ---
 
-<center>你的人生前路未免太过灰暗了吧？</center>
+<center>现在开始去做说不定还来得及</center>
 
 ## Features
 * ~~学生（实习中...）~~
