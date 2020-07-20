@@ -130,8 +130,8 @@ HTTP 状态码是 Web 服务器用来告诉客户端它所发的 HTTP Request �
 HTTP Haeders 是客户端和 Web 服务器在进行 HTTP 通信时传递附加信息的方法，大致可以被分为四类:
 1. General header：在 Request 和 Response 里都可以被使用，但不会影响消息正文
 2. Request header：包含有关要获取的资源或客户端本身更多信息
-4. Response header：包含有关服务器响应的补充信息
-5. Entity header：包含有关消息正文的更多信息，比如正文长度或其 MIME 类型
+3. Response header：包含有关服务器响应的补充信息
+4. Entity header：包含有关消息正文的更多信息，比如正文长度或其 MIME 类型
 
 ### 一些需要注意的 HTTP Headers
 
