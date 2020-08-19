@@ -8,6 +8,22 @@ tag:
 comments: true
 ---
 
+———————————————————— 更新 ————————————————————
+**国内`raw.githubusercontent.com`已经被 dns 污染了，包括我的 Blog 图片在内的文件国内正常情况无法访问，权宜之计只能修改一下 host 文件**
+
+Windows 的 hosts 文件路径：
+
+> c:\windows\system32\drivers\etc\hosts
+
+Linux 的 hosts 文件路径：
+
+> /etc/hosts
+
+在其中加一行
+
+> 199.232.4.133 raw.githubusercontent.com
+
+———————————————————— 原文 ————————————————————
 
 刚开始在 GitHub 上搭建 Blog 时遇到了个问题，上传到仓库里的图片无法在网页中被加载出来。朋友们都推荐我用七牛的图床，但由于我懒得去注册，所以决定另找办法。
 

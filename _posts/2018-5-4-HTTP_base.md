@@ -103,7 +103,7 @@ HTTP Response 与HTTP Request 类似，它由响应行、响应头和消息正�
 7. TRACE 方法：沿着到目标资源的路径执行一个消息环回测试
 
 
-其中 GET、HEAD、POST 方法最为常见，PUT、DELETE、CONNECT 等方法由于太过于危险而被大多数 Web 服务器禁用
+其中 GET、POST 方法最为常见，PUT、DELETE、CONNECT 等方法由于太过于危险而被大多数 Web 服务器禁用
 
 OPTIONS 方法可以探测到 Web 服务器所支持的请求方法
 
