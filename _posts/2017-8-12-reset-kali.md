@@ -207,6 +207,19 @@ Atom 是 github 的一个文本编辑器，无论 UI 风格 还是强大且方�
 
 里面有很完善友好的新手引导，作为新手使用无压力
 
+### 笔记本合盖不休眠
+
+    sudo vim /etc/systemd/logind.conf
+
+加一条
+
+    HandleLidSwitch=lock
+
+保存退出后重启服务
+
+    sudo systemctl restart systemd-logind.service
+    
+
 ### 第二天更新
 
 再次作死尝试再次安装NVIDIA驱动，结果～

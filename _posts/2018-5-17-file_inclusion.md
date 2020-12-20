@@ -9,11 +9,14 @@ tag:
 comments: true
 ---
 
+[Webshell 上传与解析 Part 1 —— 绕过文件上传检测](https://aquilao.github.io/Blog/UFU/)
+[Webshell 上传与解析 Part 2 —— 服务器文件解析问题](https://aquilao.github.io/Blog/parsing_vulnerability/)  
+
 当程序语言是 PHP 时，我们还可以考虑用文件包含来解析Webshell （因为相对其他语言来说还是在 PHP中较为常见，当然其他语言里也有）。本文就用 PHP 来举栗子，大概介绍一下 FI。
 
 ## 0x00 概述
 
-FI(File Inclusion) 即文件包含漏洞，是指后端脚本没有仔细验证所引入的文件名，攻击者操纵参数而导致敏感文件泄漏或Webshell 注入。
+FI(File Inclusion) 即文件包含漏洞，是指后端脚本没有仔细验证所引入的文件名，攻击者操纵参数而导致敏感文件泄漏或 Webshell 注入。
 
 可由其包含的文件位置分成两类 LFI(Local File Inclusion) 和 RFI(Remote File Inclusion)。
 
@@ -243,7 +246,7 @@ file:// 是 PHP 使用的默认封装协议，不受 allow_url_fopen 和 allow_u
 1. 只要我们有读权限，所有文件都可以被读取
 2. 只要服务器上某个已知路径文件可控，我们就能包含然后 getshell
 
-到这里，《Webshell 上传与解析》总算告一段落了。我们花了三篇文章来探讨“从如何绕过上传检测”到“如何解析Webshell ”这个问题，期间也有提到一些相关问题和知识。果然写 Blog 是一个记自己成长的办法，相对于记笔记来说，写一篇文章更需要思考如何复现并描述一个漏洞、解释一个概念，这个过程也是一个自我成长过程。接下来我会继续把我的笔记整理成文章，期间构筑自己的知识体系过程，如果读者对文章有意见或建议的话请务必给我发邮件或 Issues。
+
 
 ## 0x08 参考
 

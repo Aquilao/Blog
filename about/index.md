@@ -9,10 +9,10 @@ comments: false
 <center>现在开始去做说不定还来得及</center>
 
 ## Features
-* ~~学生（实习中...）~~
+* ~~学生（实习中...）~~社畜
 * Web 安全
 * 夕阳红广场舞俱乐部划水狗
-* 废宅
+* debu、neet
 
 ## Links
 - [瑾川](https://fakehydra.github.io/)
