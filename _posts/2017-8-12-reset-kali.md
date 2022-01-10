@@ -27,15 +27,15 @@ comments: true
     #中科大
     deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
     deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
-
+    
     #阿里云
     #deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
     #deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
-
+    
     #清华大学
     #deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
     #deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
-
+    
     #浙大
     #deb http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
     #deb-src http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
@@ -55,13 +55,13 @@ comments: true
 （Aquilao是我的用户名，可以改为其他名字）
 
     # useradd -m Aquilao
-
+    
     # passwd Aquilao
-
+    
     # usermod -a -G sudo Aquilao		
-
+    
     # chsh -s /bin/bash Aquilao		 
-
+    
     # id Aquilao		
 
 ### 安装内核头文件
@@ -91,7 +91,7 @@ kali自带pip，然而它是和python2配套使用，如果要用python3进行�
 下载后cd到下载目录，然后运行命令（P.S. 版本不同包的名字也会不同，注意修改！）
 
     $ cd ~/下载
-
+    
     $ sudo dpkg -i netease-cloud-music_1.0.0-2_amd64_deepin15.deb
 
 会提示错误，这时我们要安装依赖
@@ -108,7 +108,7 @@ kali自带pip，然而它是和python2配套使用，如果要用python3进行�
 下载后cd到下载目录，然后运行命令（P.S. 版本不同包的名字也会不同，注意修改！）
 
     $ cd ~/下载
-
+    
     $ sudo tar xzvf flash_player_ppapi_linux.x86_64.tar.gz -C /usr/lib/mozilla/plugins/ -x libpepflashplayer.so
 
 ### 安装steam
@@ -118,7 +118,7 @@ kali自带pip，然而它是和python2配套使用，如果要用python3进行�
 下载后cd到下载目录，然后运行命令（P.S. 版本不同包的名字也会不同，注意修改！）
 
     $ cd ~/下载
-
+    
     $ sudo dpkg -i steam_latest.deb
 
 然后就是普通的安装流程了，安装好了打开报错"You are missing the following 32-bit libraries, and Steam may not run: libc.so.6"
@@ -189,7 +189,7 @@ zsh 和 bash 在使用方法上可以说几乎一模一样了，相较与 bash �
 
 oh-my-zsh 是 zsh 的配置文件，里面内置了不少主题
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 设置 zsh 默认 shell
 
@@ -218,7 +218,16 @@ Atom 是 github 的一个文本编辑器，无论 UI 风格 还是强大且方�
 保存退出后重启服务
 
     sudo systemctl restart systemd-logind.service
-    
+
+
+### 自动更新
+
+```bash
+sudo apt-get install unattended-upgrades
+sudo dpkg-reconfigure -plow unattended-upgrades
+```
+
+
 
 ### 第二天更新
 
